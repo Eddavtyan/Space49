@@ -30,8 +30,8 @@ const Wrapper = styled.div`
   }
 `;
 
-export const About = () => (
-  <Wrapper>
+export const About = ({forwardRef}) => (
+  <Wrapper ref={forwardRef}>
     <Container fluid className='align-items-center d-flex h-100'>
       <Fade bottom>
         <Row>

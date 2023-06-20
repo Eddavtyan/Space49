@@ -17,11 +17,11 @@ export const Main = () => {
   return (
     <div>
       <Header serviceRef={serviceRef} aboutRef={aboutRef} contactsRef={contactsRef}/>
-      <Services ref={serviceRef}/>
-      <About ref={aboutRef}/>
+      <Services forwardRef={serviceRef}/>
+      <About forwardRef={aboutRef}/>
       <Interview />
       {/*<Vacancy />*/}
-      <Email ref={contactsRef}/>
+      <Email forwardRef={contactsRef}/>
       <Footer />
     </div>
   );

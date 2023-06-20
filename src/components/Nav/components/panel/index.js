@@ -4,19 +4,18 @@ import {Button} from "components/Nav/components/panel/components/button";
 
 export const Panel = ({aboutRef, serviceRef, contactsRef}) => {
   const handleScroll = ref => {
-    ref.current.scrollIntoView();
-    // window.scrollTo({
-    //   top: ref.current.offsetTop,
-    //   left: 0,
-    //   behavior: "smooth",
-    // });
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
     <Container>
       <div
         style={css`
-          padding-right: 3.75rem;
+          padding-right: 3.75rem
         `}
       >
         <a href='#' onClick={() => handleScroll(serviceRef)}>
@@ -29,7 +28,7 @@ export const Panel = ({aboutRef, serviceRef, contactsRef}) => {
           Contacts
         </a>
       </div>
-      <Button href='#'>Openings</Button>
+      {/*<Button href='#'>Openings</Button>*/}
     </Container>
   );
 };

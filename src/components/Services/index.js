@@ -32,8 +32,8 @@ const Wrapper = styled.div`
   }
 `;
 
-export const Services = () => (
-  <Wrapper>
+export const Services = ({forwardRef}) => (
+  <Wrapper ref={forwardRef}>
     <Container fluid>
       <Bounce bottom>
         <h2>What We Offer</h2>

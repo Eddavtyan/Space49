@@ -85,8 +85,8 @@ const Form = styled.form`
   }
 `;
 
-export const Email = () => (
-  <Wrapper>
+export const Email = ({forwardRef}) => (
+  <Wrapper ref={forwardRef}>
     <Container className='mt-5'>
       <Fade bottom>
         <Form action="mailto:hey@space49.co" method="post" enctype="text/plain">
