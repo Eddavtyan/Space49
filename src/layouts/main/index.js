@@ -6,6 +6,7 @@ import {Email} from "components/Email";
 import {Footer} from "components/Footer";
 import {About} from "components/About";
 import {useRef} from "react";
+import React from "react";
 
 export const Main = () => {
     const serviceRef = useRef(null);
